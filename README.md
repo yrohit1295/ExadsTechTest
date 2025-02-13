@@ -68,8 +68,8 @@ Ensure you have the following installed:
 ### 2. Clone the Repository
 
 ```sh
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/yrohit1295/ExadsTechTest.git
+cd ExadsTechTest
 ```
 
 ### 3. Start Docker Containers
