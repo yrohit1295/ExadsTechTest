@@ -33,6 +33,7 @@ INSERT INTO tv_series_intervals (id_tv_series, week_day, show_time)
 VALUES (1, 'Monday', '20:00:00'),
        (1, 'Thursday', '22:00:00'),
        (2, 'Friday', '21:00:00'),
+       (2, 'Tuesday', '21:00:00'),
        (2, 'Sunday', '18:30:00'),
        (3, 'Wednesday', '19:00:00'),
        (3, 'Saturday', '20:30:00');

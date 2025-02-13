@@ -8,6 +8,8 @@
 
 use App\Helpers\LogHelper;
 
+require_once __DIR__ . '/../../vendor/autoload.php';
+
 try {
     // Create an array with ASCII characters
     $asciiArray = range(',', '|');
@@ -16,6 +18,8 @@ try {
     }
 
     // original array
+    $originalArray = implode(', ', $asciiArray);
+    echo "Original ASCII Array: " . $originalArray . "\n";
     LogHelper::logMessage("INFO", "Original ASCII Array: " . implode(', ', $asciiArray));
 
     // Remove a random element from the array
@@ -24,7 +28,9 @@ try {
     unset($asciiArray[$randomKey]);
 
     // Array after removal
-    LogHelper::logMessage("INFO", "Array after removing the random element ($removedCharacter): " . implode(', ', $asciiArray));
+    $removedCharArray = implode(', ', $asciiArray);
+    echo "Array after removing the random element ($removedCharacter): " . $removedCharArray;
+    LogHelper::logMessage("INFO", "Array after removing the random element ($removedCharacter): " . $removedCharArray);
 
     // Find the missing character
     $allAscii = range(',', '|');

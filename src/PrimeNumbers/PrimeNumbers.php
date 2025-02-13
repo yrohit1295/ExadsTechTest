@@ -6,6 +6,8 @@
  * only multiple of itself then print “[PRIME]”.
  */
 
+require_once __DIR__ . '/../../vendor/autoload.php';
+
 use App\Helpers\LogHelper;
 
 try {

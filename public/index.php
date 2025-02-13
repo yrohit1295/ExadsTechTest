@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use App\ABTest\ABTestDesign;
+use App\Models\ABTestDesign;
 
 try {
     $promotionId = isset($_GET['promotion_id']) ? intval($_GET['promotion_id']) : 1;

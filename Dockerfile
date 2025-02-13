@@ -11,6 +11,8 @@ COPY ./docker/apache/my-000-default.conf /etc/apache2/sites-available/000-defaul
 
 RUN a2enmod rewrite
 
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
 
 EXPOSE 80
