@@ -65,21 +65,21 @@ Ensure you have the following installed:
 
 ### 1. Start Docker Desktop
 
-### 2. Clone the Repository**
+### 2. Clone the Repository
 
 ```sh
 git clone <repository-url>
 cd <repository-folder>
 ```
 
-### 3. Start Docker Containers**
+### 3. Start Docker Containers
 
 ```sh
 docker compose up --build -d
 ```
 Images and containers will be visible in docker desktop
 
-### 4. Import database**
+### 4. Import database
 
 ```sh
 docker cp db/tv_schedule.sql mysql_latest:/tmp/tv_schedule.sql
