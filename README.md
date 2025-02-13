@@ -50,6 +50,8 @@ Ensure you have the following installed:
 │   ├── Models
 │   │   ├── ABTestDesign.php
 │   │   └── TVSeriesSchedule.php
+│   ├── PrimeNumbers
+│   │   └── PrimeNumbers.php
 ├── vendor                # Composer dependencies
 ├── .gitignore
 ├── config.php            # Configuration file
